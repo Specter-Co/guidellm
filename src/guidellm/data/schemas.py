@@ -254,7 +254,7 @@ class MultiImageDatasetConfig(SyntheticTextDatasetConfig):
         le=10,
         default=1,
     )
-    image_size: Literal["720p"] = Field(
-        description="Standard image resolution (720p = 1280x720)",
+    image_size: Literal["720p", "1080p"] = Field(
+        description="Standard image resolution (720p = 1280x720, 1080p = 1920x1080)",
         default="720p",
     )
